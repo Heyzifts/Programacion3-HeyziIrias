@@ -1,0 +1,3 @@
+﻿  S2_T2_FuturoDeUnEquipo.cpp
+C:\Users\Heyzi Irias\Documents\GitHub\Programacion3-HeyziIrias\S2_T2_Heyzi\S2_T2_FuturoDeUnEquipo\S2_T2_FuturoDeUnEquipo\S2_T2_FuturoDeUnEquipo.cpp(10,12): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+  S2_T2_FuturoDeUnEquipo.vcxproj -> C:\Users\Heyzi Irias\Documents\GitHub\Programacion3-HeyziIrias\S2_T2_Heyzi\S2_T2_FuturoDeUnEquipo\Debug\S2_T2_FuturoDeUnEquipo.exe
