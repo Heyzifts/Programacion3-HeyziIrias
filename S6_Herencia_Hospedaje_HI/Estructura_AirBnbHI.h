@@ -9,7 +9,7 @@ private:
     int personas;
     int tiempo;
 public:
-    AirBnB(string lugar,int precio, int personas, int tiempo) : Hospedaje(lugar,precio)
+    AirBnb(string lugar,int precio, int personas, int tiempo) : Hospedaje(lugar,precio)
     {
         this->personas = personas;
         this->tiempo = tiempo;
@@ -36,7 +36,6 @@ public:
     {
         cout<<"Mostrando Confirmacion de Datos: \n";
         cout<<"Lugar: "<<getLugar()<<endl;
-        cout<<"Color: "<<getColor()<<endl;
         cout<<"Personas: "<<personas<<endl;
         cout<<"Tiempo: "<<tiempo<<endl;
         cout<<"Precio: "<<getPrecio()<<endl;

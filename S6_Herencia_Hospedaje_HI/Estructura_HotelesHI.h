@@ -41,7 +41,7 @@ public:
     {
         cout<<"Mostrando Confirmacion de Datos: \n";
         cout<<"Lugar: "<<getLugar()<<endl;
-        cout<<"Comida: "<<comida<<endl;
+        cout<<"Comida: "<<comida <<endl;
         cout<<"Precio: "<<getPrecio()<<endl;
     }
     ~Hoteles();

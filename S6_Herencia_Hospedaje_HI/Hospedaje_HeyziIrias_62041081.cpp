@@ -18,13 +18,13 @@ menu();
     string lugar;
     char comida='f';
     int precio, tiempo, personas , cuartos;
-    Hoteles *h1;
-    Apartamento *ap1;
-    AirBnb *ab1;
+    Hoteles *hotel1;
+    Apartamentos *apartamento1;
+    AirBnb *airbnb1;
     do
     {
         system("cls");
-        cout<<"===MENU===\n";
+        cout<<"============MENU=======\n";
         cout<<"1. Hospedarse en Hotel\n";
         cout<<"2. Hospedarse en AirBnB\n";
         cout<<"3. Hospedarse en Apartamento\n";
@@ -39,23 +39,23 @@ menu();
             cout<<"\nDigite los Datos: \n";
             cin.ignore();
             cout<<"Lugar: ";
-            std::cin.getline(lugar);
+            cin>>lugar;
             cout<<"Precio: ";
             cin>>precio;
-            cout<<"Comida (s/n): ";
+            cout<<" Cantidad de Comida: ";
             cin>>comida;
             if(comida == 's')
             {
-               h1 = new Hoteles(lugar,precio,true) ;
+               hotel1 = new Hoteles(lugar,precio,true) ;
                system("cls");
-               h1->mostrarDatos();
+               hotel1->mostrarDatos();
                system("pause");
             }
             else
             {
-                h1 = new Hoteles(lugar,precio,false) ;
+                hotel1 = new Hoteles(lugar,precio,false) ;
                 system("cls");
-                h1->mostrarDatos();
+                hotel1->mostrarDatos();
                 system("pause");
             }
             break;
@@ -64,16 +64,16 @@ menu();
             cout<<"\nDigite los Datos: \n";
             cin.ignore();
             cout<<"Lugar: ";
-            getline(cin,lugar);
+            cin>>lugar;
             cout<<"Precio: ";
             cin>>precio;
             cout<<"Personas: ";
             cin>>personas;
             cout<<"Tiempo: ";
             cin>>tiempo;
-            ab1 = new AirBnb(lugar,precio,personas,tiempo);
+            airbnb1 = new AirBnb(lugar,precio,personas,tiempo);
             system("cls");
-            ab1->mostrarDatos();
+            airbnb1->mostrarDatos();
             system("pause");
             break;
         case 3:
@@ -81,16 +81,16 @@ menu();
             cout<<"\nDigite los Datos: \n";
             cout<<"Lugar: ";
             cin.ignore();
-            getline(cin,lugar);
+            cin>>lugar;
             cout<<"Precio: ";
             cin>>precio;
             cout<<"Tiempo: ";
             cin>>tiempo;
             cout<<"Habitaciones: ";
             cin>>cuartos;
-            ap1 = new Apartamento(lugar,precio,tiempo,cuartos);
+            apartamento1 = new Apartamento(lugar,precio,tiempo,cuartos);
             system("cls");
-            ap1->mostrarDatos();
+            apartamento1->mostrarDatos();
             system("pause");
             break;
         case 4:

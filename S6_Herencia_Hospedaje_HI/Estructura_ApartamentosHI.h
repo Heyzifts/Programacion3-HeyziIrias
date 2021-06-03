@@ -3,13 +3,13 @@
 
 using namespace std;
 
-class Apartamento : public Hospedaje
+class Apartamentos : public Hospedaje
 {
 private:
     int tiempo; // En meses
     int habitaciones;
 public:
-    Apartamento(string lugar, int precio,int tiempo, int habitaciones) : Hospedaje(lugar,precio)
+    Apartamentos(string lugar, int precio,int tiempo, int habitaciones) : Hospedaje(lugar,precio)
     {
         this->tiempo = tiempo;
         this->habitaciones = habitaciones;
