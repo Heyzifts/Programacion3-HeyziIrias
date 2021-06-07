@@ -152,7 +152,7 @@ void mostrarFechaconHora (int año, int mes, int dia, int hora, int minuto)
 	itoa (*minutoApuntador,buffer,10);	
 	Fecha += concatenarStrings(":", buffer);	
 
-	//Imprimimos FECHA
+	//Imprimimos FECHA.
 	std::cout << Fecha;
 }
 
