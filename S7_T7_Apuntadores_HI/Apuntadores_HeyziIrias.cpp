@@ -49,9 +49,9 @@ bool esMinutoValido(int minuto)
 	return true;
 }
 
-string concatenarDosStrings(const string &s1, const string &s2)
+string concatenarDosStrings(const string &string1, const string &string2)
 {
-    return s1 + s2;
+    return string1 + string2;
 }
 
 string GetMesString(int mes)
